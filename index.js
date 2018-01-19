@@ -1,10 +1,10 @@
 const app = "I don't do much."
 var kittens = ["Milo", "Otis", "Garfield"]
 
-public destructivelyAppendKitten(name) {
+function destructivelyAppendKitten(name) {
   kittens.push(name)
 }
-public destructivelyRemoveLastKitten() {
+function destructivelyRemoveLastKitten() {
   kittens.pop()
 }
 
