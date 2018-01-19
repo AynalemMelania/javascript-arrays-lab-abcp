@@ -1,23 +1,22 @@
 const app = "I don't do much."
 var kittens = ["Milo", "Otis", "Garfield"]
 
-function destructivelyAppendKitten(name){
-  kittens = [...,kittens]
+public destructivelyAppendKitten(name) {
+  kittens.push(name)
 }
-1) Arrays destructivelyAppendKitten(name) appends a kitten to the end of the kittens array:
-     ReferenceError: destructivelyAppendKitten is not defined
-      at Context.<anonymous> (test/index-test.js:14:7)
-  2) Arrays destructivelyPrependKitten(name) prepends a kitten to the beginning of the kittens
-array:
-     ReferenceError: destructivelyPrependKitten is not defined
-      at Context.<anonymous> (test/index-test.js:21:7)
-  3) Arrays destructivelyRemoveLastKitten() removes the last kitten from the kittens array:
-     ReferenceError: destructivelyRemoveLastKitten is not defined
-      at Context.<anonymous> (test/index-test.js:29:7)
-  4) Arrays destructivelyRemoveFirstKitten() removes the First kitten from the kittens array:
-     ReferenceError: destructivelyRemoveFirstKitten is not defined
-      at Context.<anonymous> (test/index-test.js:37:7)
-  5) Arrays appendKitten(name) appends a kitten to the kittens array and returns a new array, l
+public destructivelyRemoveLastKitten() {
+  kittens.pop()
+}
+
+function destructivelyRemoveFirstKitten(){
+  kittens.slice()
+}  
+function appendKitten(name){
+  var kittens_copy = kittens.slice()
+  kittens_copy.push(name)
+  return kittens_copy
+}
+ appends a kitten to the kittens array and returns a new array, l
 eaving the kittens array unchanged:
      ReferenceError: appendKitten is not defined
       at Context.<anonymous> (test/index-test.js:45:7)
