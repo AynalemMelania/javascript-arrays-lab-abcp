@@ -28,18 +28,18 @@ function appendKitten(name){
 }
 
 function prependKitten(name){
-var kittens_copy = kittens_copy.slice()
+var kittens_copy = kittens.slice()
 kittens_copy.unshift(name)
 return kittens_copy
 }
 
 function removeLastKitten() {
-  var kittens_copy = kittens_copy.slice()
+  var kittens_copy = kittens.slice()
   kittens_copy.pop()
   return kittens_copy
 }
 function removeFirstKitten() {
-    var kittens_copy = kittens_copy.slice()
+    var kittens_copy = kittens.slice()
     kittens_copy.shift()
     return kittens_copy
 }
