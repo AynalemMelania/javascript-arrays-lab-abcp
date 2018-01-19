@@ -16,7 +16,10 @@ function destructivelyRemoveFirstKitten(){
   return kittens
 }
 function destructivelyPrependKitten(name) {
-  return kittens.reverse().push(name).reverse()
+ kittens.reverse()
+ kittens.push(name)
+ kittens.reverse()
+ return kittens
 }
 function appendKitten(name){
   var kittens_copy = kittens.slice()
