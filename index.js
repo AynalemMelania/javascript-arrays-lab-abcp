@@ -9,18 +9,21 @@ function destructivelyRemoveLastKitten() {
 }
 
 function destructivelyRemoveFirstKitten(){
-  kittens.slice()
+  return kittens.slice()
 }
+
 function appendKitten(name){
   var kittens_copy = kittens.slice()
   kittens_copy.push(name)
   return kittens_copy
 }
+
 function prependKitten(name){
 var kittens_copy = kittens_copy.slice()
 kittens_copy.unshift(name)
 return kittens_copy
 }
+
 function removeLastKitten() {
   var kittens_copy = kittens_copy.slice()
   kittens_copy.pop()
