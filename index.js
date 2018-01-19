@@ -1,7 +1,9 @@
 const app = "I don't do much."
 var kittens = ["Milo", "Otis", "Garfield"]
 
-destructivelyAppendKitten(name)
+function destructivelyAppendKitten(name){
+  kittens = [...,kittens]
+}
 1) Arrays destructivelyAppendKitten(name) appends a kitten to the end of the kittens array:
      ReferenceError: destructivelyAppendKitten is not defined
       at Context.<anonymous> (test/index-test.js:14:7)
