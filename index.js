@@ -13,7 +13,7 @@ function destructivelyRemoveFirstKitten(){
   return kittens.slice()
 }
 function destructivelyPrependKitten(name) {
-  return [....,kittens]
+  return [...,kittens]
 }
 function appendKitten(name){
   var kittens_copy = kittens.slice()
