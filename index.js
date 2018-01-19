@@ -10,21 +10,23 @@ public destructivelyRemoveLastKitten() {
 
 function destructivelyRemoveFirstKitten(){
   kittens.slice()
-}  
+}
 function appendKitten(name){
   var kittens_copy = kittens.slice()
   kittens_copy.push(name)
   return kittens_copy
 }
- appends a kitten to the kittens array and returns a new array, l
-eaving the kittens array unchanged:
-     ReferenceError: appendKitten is not defined
-      at Context.<anonymous> (test/index-test.js:45:7)
-  6) Arrays prependKitten(name) prepends a kitten to the kittens array and returns a new array,
- leaving the kittens array unchanged:
-     ReferenceError: prependKitten is not defined
-      at Context.<anonymous> (test/index-test.js:53:7)
-  7) Arrays removeLastKitten() removes the last kitten in the kittens array and returns a new a
+function prependKitten(name){
+var kittens_copy = kittens_copy.slice()
+kittens_copy.unshift(name)
+return kittens_copy
+}  
+function removeLastKitten() {
+  var kittens_copy = kittens_copy.slice()
+  kittens_copy.pop()
+  return kittens_copy
+}
+  removes the last kitten in the kittens array and returns a new a
 rray, leaving the kittens array unchanged:
      ReferenceError: removeLastKitten is not defined
       at Context.<anonymous> (test/index-test.js:61:7)
