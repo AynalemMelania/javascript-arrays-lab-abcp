@@ -16,7 +16,7 @@ function destructivelyRemoveFirstKitten(){
   return kittens
 }
 function destructivelyPrependKitten(name) {
-
+  return [name,kittens]
 }
 function appendKitten(name){
   var kittens_copy = kittens.slice()
